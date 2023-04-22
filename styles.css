@@ -6,15 +6,18 @@
     ;
 }
 
+body {
+  background-color: #fff5d7;
+}
+
 .navbar {
-    background: #ffffff;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top: 0;
+    padding: 10 10%;
     z-index: 999;
 }
 
@@ -53,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 120px;
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
@@ -103,4 +106,86 @@
 
   .fa-linkedin-square {
     color: #800020;
+  }
+
+  .intro_home {
+    color: #36013F;
+    padding-left: 50px;
+  }
+
+
+  /*---- about----*/
+  #about {
+    padding: 80px 0;
+    color: #36013F;
+
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px;
+  }
+
+  .about_col_1 {
+    flex-basis: 35%;
+  }
+
+  .about_col_1 img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .about_col_2 {
+    flex-basis: 60%;
+
+  }
+
+  .subtitle {
+    font-size: 50px;
+    font-weight: 500;
+
+  }
+
+  .tabs {
+    display: flex;
+    margin: 20px 0 40px;
+
+  }
+
+  .tab_links { 
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab_links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff5e6c;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+
+  .tab_links.dyn::after {
+    width: 100%;
+
+  }
+
+  .tab_content ul li {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  .tab_content ul li span{
+    color: #ff5e6c;
+    font-size: 14px;
+    font-weight: 800;
+    
   }
