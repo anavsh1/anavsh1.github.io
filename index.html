@@ -27,9 +27,6 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                  <a href="#home" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
                   <a href="#about" class="navbar__links" id="about-page">About</a>
                 </li>
                 <li class="navbar__item">
@@ -37,10 +34,10 @@
                     >Experience</a>
                 </li>
                 <li class="navbar__btn">
-                  <a href="#github" class="gh_button" id="github"><i class="fa fa-github"></i> </a>
+                  <a href="https://github.com/anavsh1" target="_blank" rel="noopener noreferrer" class="gh_button" id="github"><i class="fa fa-github"></i> </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#linkedin" class="li_button" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.linkedin.com/in/anavsh/" target="_blank" rel="noopener noreferrer" class="li_button" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
                   </li>
               </ul>
         </div>
@@ -66,20 +63,58 @@
               <p>Computer science student</p>
 
               <div class="tabs">
-                <p class="tab_links dyn">Skills</p>
-                <p class="tab_links">Education</p>
-                <p class="tab_links">Enjoys</p>
+                <p class="tab_links dyn" onclick="opentab('skills')">Skills</p>
+                <p class="tab_links" onclick="opentab('education')">Education</p>
+                <p class="tab_links" onclick="opentab('interests')">Interests</p>
               </div>
-              <div class="tab_content">
+              <div class="tab_content dyn" id="skills">
                 <ul>
-                  <li><span>Languages</span><br>Java, Python, C, C++, R, SQL, JavaScript, HTML/CSS</li>
-                  <li><span>Tools & Frameworks</span><br>Pandas, NumPy, scikit-learn, XGBoost, Spring, Maven, Spock, Docker, ReactJS, Node.js, Amazon SageMaker, Deep Java Library (DJL), DL4J</li>
+                  <li><span class="span_og">Languages</span><br>Java, Python, C, C++, R, SQL, JavaScript, HTML/CSS</li>
+                  <li><span class="span_og">Tools & Frameworks</span><br>Pandas, NumPy, scikit-learn, XGBoost, Spring, Maven, Spock, Docker, ReactJS, Node.js, Amazon SageMaker, Deep Java Library (DJL), DL4J</li>
                 </ul>
               </div>
+
+              <div class="tab_content" id="education">
+                
+                <ul>
+                  <li><span class="span_og"><a class="school" href="https://www.cs.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a>
+                    </span><br><br>B.S. in Computer Science <span class="date">May 2024</span>
+                    <span class="secondary_text"><br>Minors in Mathematics, Statistics, Sociology</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab_content" id="interests">
+                <ul>
+                  <li><span class="span_og">Hobbies</span><br>Tennis, Chess, Reading, Movies</li>
+                  <li><span class="span_og">Academic</span><br>Machine Learning, Quantitative Finance</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
+
+      <script>
+        var tab_links = document.getElementsByClassName("tab_links");
+        var tab_content = document.getElementsByClassName("tab_content");
+
+        function opentab(tab_name) {
+          for(tab_link of tab_links) {
+            tab_link.classList.remove("dyn")
+          }
+
+          for(content of tab_content) {
+            content.classList.remove("dyn")
+          }
+
+          event.currentTarget.classList.add("dyn")
+          document.getElementById(tab_name).classList.add("dyn")
+        }
+      </script>
+
+      
 
 </body>
 </html>

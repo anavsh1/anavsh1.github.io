@@ -166,7 +166,7 @@ body {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff5e6c;
+    background: #800020;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -183,9 +183,55 @@ body {
     margin: 20px 0;
   }
 
-  .tab_content ul li span{
-    color: #ff5e6c;
+  .span_og {
+    color: #800020;
     font-size: 14px;
     font-weight: 800;
     
   }
+
+  .school:link {
+    text-decoration: underline;
+    color: #800020;
+    font-size: 16px;
+
+  }
+
+  .school:active {
+    text-decoration: none;
+    color: #800020;
+  }
+
+  .school:visited {
+    text-decoration: none;
+    color: #800020;
+  }
+
+  .school:hover {
+    text-decoration: none;
+    color: #800020a8;
+    transition: all 0.3s ease;
+  }
+
+
+  .date {
+    margin: 10px;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+
+.secondary_text {
+  font-size: 13px;
+
+}
+
+.tab_content {
+  display: none;
+
+}
+
+.tab_content.dyn {
+  display: block
+  
+}
