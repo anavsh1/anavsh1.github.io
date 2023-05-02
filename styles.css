@@ -28,8 +28,7 @@ body {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+    padding: 10px 50px;
 }
 
 #navbar_logo {
@@ -39,6 +38,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    
 }
 
 .navbar__menu {
@@ -111,6 +111,11 @@ body {
   .intro_home {
     color: #36013F;
     padding-left: 50px;
+  }
+
+  .intro_desc {
+    padding-left: 80px;
+    font-size: 30px;
   }
 
 
@@ -197,11 +202,6 @@ body {
 
   }
 
-  .school:active {
-    text-decoration: none;
-    color: #800020;
-  }
-
   .school:visited {
     text-decoration: none;
     color: #800020;
@@ -211,6 +211,11 @@ body {
     text-decoration: none;
     color: #800020a8;
     transition: all 0.3s ease;
+  }
+
+  .school:active {
+    text-decoration: none;
+    color: #800020;
   }
 
 
@@ -235,3 +240,84 @@ body {
   display: block
   
 }
+
+/*---- experience ----*/
+#experience {
+  margin-left: 80px;
+  color: #36013F;
+}
+
+.comp-title {
+  color: #800020;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  width: 25%;
+  font-size: 25px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .comp-title:hover {
+  color: #36013F;
+  
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+
+.comp-title:after {
+  content: '[+]'; /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: #800020;
+  margin-left: 5px;
+  font-weight: bold;
+
+}
+
+.active:after {
+  content: "[-]"; /* Unicode character for "minus" sign (-) */
+  font-size: 15px;
+  color: #800020;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.exp-desc {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.position {
+  color: rgb(57, 160, 160);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.position:hover {
+  text-decoration: none;
+  color: #800020a8;
+  transition: all 0.3s ease;
+}
+
+.time-worked {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.location {
+  font-style: italic;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.bulletpts {
+  padding: 15px;
+  
+}
+
+
