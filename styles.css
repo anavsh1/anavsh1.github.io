@@ -10,6 +10,10 @@ body {
   background-color: #fff5d7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
     height: 80px;
     display: flex;
@@ -319,5 +323,23 @@ body {
   padding: 15px;
   
 }
+
+.pdf {
+  color:#36013F;
+}
+
+.poster {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.projectdeets {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*----- footer ------*/
+
 
 
