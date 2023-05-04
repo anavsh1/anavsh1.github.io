@@ -15,24 +15,29 @@ html {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+
+
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
-    padding: 10 10%;
+    padding:0, 10%;
     z-index: 999;
+    background-color:#fff5d7;
 }
 
 .navbar__container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 10px 50px;
+    padding: 10px 10px;
+
 }
 
 #navbar_logo {
@@ -42,6 +47,8 @@ html {
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    position: sticky;
+
     
 }
 
@@ -53,6 +60,7 @@ html {
   
   .navbar__item {
     height: 80px;
+    
   }
   
   .navbar__links {
@@ -108,18 +116,19 @@ html {
     color: #800020;
   }
 
-  .fa-linkedin-square {
+  .fa-linkedin {
     color: #800020;
   }
 
   .intro_home {
     color: #36013F;
-    padding-left: 50px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 300px;
   }
 
   .intro_desc {
-    padding-left: 80px;
-    font-size: 30px;
+    font-size: 40px;
   }
 
 
@@ -340,6 +349,54 @@ html {
 
 
 /*----- footer ------*/
+
+.footer {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  flex-direction: column;
+  margin-left: 50%;
+}
+
+.copyright {
+  margin-bottom: 1rem;
+  flex-direction: column;
+
+}
+
+.link-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.link-icons .fa-github {
+  color: rgb(57, 160, 160);
+
+}
+
+.link-icons .fa-envelope {
+  color: #cd5360;
+  
+}
+
+.link-icons .fa-linkedin {
+  color: #859900;;
+}
+
+.link-icons .fa-file {
+  color: #2075B1;
+}
+
+
 
 
 
