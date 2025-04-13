@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #faf8f5;
+    background-color: #ece5da;
     color: #1a1f36;
     line-height: 1.6;
 }
@@ -25,7 +25,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    background-color: #faf8f5;
+    background-color: #ece5da;
     border-bottom: 1px solid rgba(26,31,54,0.05);
     z-index: 1000;
 }
@@ -253,7 +253,7 @@ html {
     margin-bottom: 0.75rem;
     height: auto;
     padding: 1.5rem;
-    background-color: #f7f5f2;
+    background-color: #eae0d1d5;
     border-radius: 8px;
     box-shadow: 0 1px 2px rgba(26,31,54,0.03);
 }
@@ -314,7 +314,7 @@ html {
 /* Footer */
 .footer {
     padding: 1.5rem 0;
-    background-color: #faf8f5;
+    background-color: #ece5da;
     border-top: 1px solid rgba(26,31,54,0.05);
     margin-top: 2rem;
 }
@@ -396,13 +396,13 @@ html {
 #about {
     padding: 1.5rem 0;
     margin-top: 1rem;
-    background-color: #faf8f5;
+    background-color: #ece5da;
 }
 
 #experience {
     padding: 1.5rem 0;
     margin-top: 2rem;
-    background-color: #faf8f5;
+    background-color: #ece5da;
     border-top: 1px solid rgba(26,31,54,0.05);
 }
 
