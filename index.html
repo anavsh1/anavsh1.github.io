@@ -21,71 +21,44 @@
         <div class="navbar__container">
             <a href="/" id="navbar_logo">Anav Sharma</a>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                  <a href="#about" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                  <a href="#experience" class="navbar__links" id="experiences-page"
-                    >Experience</a>
-                </li>
                 <li class="navbar__btn">
                   <a href="https://github.com/anavsh1" target="_blank" rel="noopener noreferrer" class="gh_button" id="github"><i class="fa-brands fa-github"></i></a>
                 </li>
                 <li class="navbar__btn">
                     <a href="https://www.linkedin.com/in/anavsh/" target="_blank" rel="noopener noreferrer" class="li_button" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                  </li>
-              </ul>
+                </li>
+            </ul>
         </div>
      </nav>
-
-      <div class="intro" id="home">
-        <div class="intro_home">
-          <p class="intro_desc"><br><br><br>I'm a computer science student passionate about new technology, machine learning, and quantitative finance.
-          </p>
-        </div>
-      </div>
-
 
       <!-- about -->
       <div id="about">
         <div class="container">
-          <div class="row">
-            <div class="about_col_1">
-              <img src="images/profile.jpeg">
+          <h1 class="subtitle">About Me</h1>
+          <div class="about-content">
+            <div class="about-section">
+              <h3 class="section-title">Education</h3>
+              <div class="education-item">
+                <a class="school" href="https://www.cs.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a>
+                <p class="degree">B.S. in Computer Science <span class="date">— May 2024</span></p>
+                <p class="minors">Minors in Mathematics, Statistics</p>
+              </div>
             </div>
-            <div class="about_col_2">
-              <h1 class="subtitle">About Me</h1>
-              <p>Computer science student</p>
 
-              <div class="tabs">
-                <p class="tab_links dyn" onclick="opentab('skills')">Skills</p>
-                <p class="tab_links" onclick="opentab('education')">Education</p>
-                <p class="tab_links" onclick="opentab('interests')">Interests</p>
+            <div class="about-section">
+              <h3 class="section-title">Skills</h3>
+              <div class="skills-list">
+                <p><span class="category">Languages</span> Python, Java, C++, C#, SQL</p>
+                <p><span class="category">Tools & Frameworks</span> Pandas, sklearn, Spring, Docker, React, SageMaker, Azure</p>
               </div>
-              <div class="tab_content dyn" id="skills">
-                <ul>
-                  <li><span class="span_og">Languages</span><br>Java, Python, C, C++, R, SQL, JavaScript, HTML/CSS</li>
-                  <li><span class="span_og">Tools & Frameworks</span><br>Pandas, NumPy, scikit-learn, XGBoost, Spring, Maven, Spock, Docker, ReactJS, Node.js, Amazon SageMaker, Deep Java Library (DJL), DL4J</li>
-                </ul>
-              </div>
+            </div>
 
-              <div class="tab_content" id="education">
-                
-                <ul>
-                  <li><span class="span_og"><a class="school" href="https://www.cs.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue University</a>
-                    </span><br><br>B.S. in Computer Science <span class="date">May 2024</span>
-                    <span class="secondary_text"><br>Minors in Mathematics, Statistics, Sociology</span>
-                  </li>
-                </ul>
+            <div class="about-section">
+              <h3 class="section-title">Interests</h3>
+              <div class="interests-list">
+                <p><span class="category">Hobbies</span> Tennis, Chess, Reading</p>
+                <p><span class="category">Technical</span> whatever's interesting</p>
               </div>
-
-              <div class="tab_content" id="interests">
-                <ul>
-                  <li><span class="span_og">Hobbies</span><br>Tennis, Chess, Reading, Movies</li>
-                  <li><span class="span_og">Academic</span><br>Machine Learning, Quantitative Finance</li>
-                </ul>
-              </div>
-
             </div>
           </div>
         </div>
@@ -112,10 +85,29 @@
       <div id="experience">
         <div class="container">
           <h1 class="subtitle">Experience</h1>
+          <div class="comp-title">Palantir</div>
+          <div class="exp-desc">
+            <h4 class="position-title">
+              <a class="position" href="https://www.palantir.com/" target="_blank" rel="noopener noreferrer">Forward Deployed Engineer</a>
+            </h4>
+            <h5 class="time-worked">April 2025</h5>
+            <h6 class="location">New York, NY</h6>
+            <p>Improving Foundry - centralized customer success</p>
+          </div>
+
           <div class="comp-title">Societe Generale</div>
           <div class="exp-desc">
+            <h4 class="position-title">
+              <a class="position" href="https://www.societegenerale.com/en" target="_blank" rel="noopener noreferrer">Software Engineer</a>
+            </h4>
+            <h5 class="time-worked">July 2024 - April 2025</h5>
+            <h6 class="location">New York, NY</h6>
+            <p>Electronic Trading - Rates + Fixed Income</p>
+          </div>
+
+          <div class="exp-desc">
             <h4>
-              <a class="position" href="https://www.societegenerale.com/en" target="_blank" rel="noopener noreferrer">Technology Summer Analyst</a>
+              <a class="position" href="https://www.societegenerale.com/en" target="_blank" rel="noopener noreferrer">Software Engineer Intern</a>
             </h4>
             <h5 class="time-worked">June 2023 - August 2023</h5>
             <h6 class="location">New York, NY</h6>
@@ -129,11 +121,7 @@
             </h4>
             <h5 class="time-worked">June 2022 - August 2022</h5>
             <h6 class="location">New York, NY</h6>
-            <ul class="bulletpts">
-              <li>Developed a backend REST API engine for generating actionable recommendations based on chart data using Java Spring Boot and Spring Cloud, Gradle, and Maven.</li>
-              <li>Optimized backend workflow to allow for easier product integration for 200+ clients.</li>
-              <li>Implemented integration tests using SQL and Spock testing for Groovy and Java to ensure robustness of code.</li>
-            </ul>
+            <p>REST API engine for data-driven recommendations</p>
           </div>
 
           <div class="comp-title">IMC Trading*</div>
@@ -143,44 +131,28 @@
             </h4>
             <h5 class="time-worked">May 2022</h5>
             <h6 class="location">Chicago, IL</h6>
-            <ul class="bulletpts">
-              <li>Analyzed and implemented market-making trading strategies over a 2-day program using in-house trading simulations, mathematical skills, and Python. </li>
-              <li>Selected as 1 of 28 students to participate in the program.</li>
-            </ul>
+            <p>Selected as 1 of 28 for 2-day program implementing market-making strategies using Python and mathematical modeling</p>
           </div>
           
           <div class="comp-title">WhizAI</div>
           <div class="exp-desc">
             <h4>
-              <a class="position" href="https://www.whiz.ai/" target="_blank" rel="noopener noreferrer">Machine Learning Intern</a>
+              <a class="position" href="https://www.whiz.ai/" target="_blank" rel="noopener noreferrer">ML Intern</a>
             </h4>
             <h5 class="time-worked">May 2021 - August 2021</h5>
             <h6 class="location">Somerset, NJ</h6>
-            <ul class="bulletpts">
-              <li>Developed data visualization models with decision trees using XGBoost in Python.</li>
-              <li>Worked with AWS SageMaker to develop, train, and manage models.</li>
-              <li>Used the Scikit-learn machine learning library (Python-based) to evaluate data visualization models.</li>
-              <li>Trained visualization models using Deep Java Library (DJL) to determine if it was more feasible than SageMaker.</li>
-            </ul>
+            <p>Data visualization and model development with SageMaker</p>
           </div>
 
           <div class="comp-title">Merck x Purdue</div>
           <div class="exp-desc">
             <h4>
-              <a class="position" href="https://datamine.purdue.edu/" target="_blank" rel="noopener noreferrer">Full Stack Developer Researcher</a>
+              <a class="position" href="https://datamine.purdue.edu/" target="_blank" rel="noopener noreferrer">Full Stack Developer</a>
             </h4>
             <h5 class="time-worked">August 2020 - May 2021</h5>
             <h6 class="location">West Lafayette, IN</h6>
-            <ul class="bulletpts">
-              <li>Developed a mobile application with React Native to communicate biometric data collected by fitness watches.</li>
-              <li>Used Node.js and Express to develop a REST API for back-end development.</li>
-              <li>Collaborated with a team of 20 engineers under the Agile Software development cycle for the entire school year.</li>
-            </ul>
-            <p class="projectdeets">Project overview, technologies, data pipeline, and other team contribtions are outlined in our technical poster. The PDF version can be found <a class="pdf" href="/images/2021Merck-biometrics_poster_2021.pdf" target="_blank" rel="noopener noreferrer">here.</a></p> 
-            <img class="poster" src="images/MerckPoster.png" width="815" height="431">
-           <p class="projectdeets">Additonally, our video presentation can be found <a class="pdf" href="https://www.youtube.com/watch?v=dvf6L2iXbDc" target="_blank" rel="noopener noreferrer">here.</a></p>
+            <p>React Native app for biometric data visualization</p>
           </div>
-
         </div>
       </div>
       <script src="app.js" type="text/javascript"></script>
@@ -192,7 +164,7 @@
       <div class="footer">
         <div class="footer-wrapper">
           <p class="copyright">&#128187;
-            by Anav Sharma,  2023</p>
+            by Anav Sharma,  2025</p>
           <div class="link-icons">
             <a href= "mailto: anavsh0829@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://github.com/anavsh1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
